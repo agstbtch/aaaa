@@ -21,9 +21,3 @@
 Настраиваем DNS. [->](./module_01/dns/README.md)
 
 Настраиваем часовой пояс. [->](./module_01/timedate/README.md)
-
-## Решение Модуль № 2: Выполнение работ по проектированию сетевой инфраструктуры
-
-Настройка RAID на HQ-SRV. [->](./module_02/RAID/README.md)
-
-Настройка NFS. [->](./module_02/NFS/README.md)

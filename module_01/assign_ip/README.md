@@ -22,7 +22,6 @@ CONFIG_IPV4=yes
 ```
 для интерфейса, по которому ISP получает интернет, в значении BOOTPROTO, вписать вместо static -> dhcp
 
-<img src="01.png" width='600'>
 
 ## HQ-RTR - EcoRouter
 

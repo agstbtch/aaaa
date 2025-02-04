@@ -71,7 +71,7 @@ nano /etc/net/ifaces/ens192/resolv.conf
 search au-team.irpo
 nameserver 127.0.0.1
 nameserver 192.168.0.2
-nameserver 77.88.8.8
+nameserver (указать внешний ip-адрес ISP)
 ```
 
 Перезагружаем сеть
@@ -83,7 +83,7 @@ systemctl restart network
 Проверяем
 
 ```
-dig ya.ru
+dig uksivt.ru
 ```
 
 <img src="07.png" width='600'>

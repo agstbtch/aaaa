@@ -16,7 +16,7 @@ timedatectl status
 timedatectl set-timezone Asia/Yekaterinburg
 ```
 
-## HQ-RTR (EcoRouter)
+## HQ-RTR, BR-RTR (EcoRouter)
 
 ```
 conf t
@@ -26,20 +26,4 @@ ntp timezone utc+5
 
 ```
 show ntp timezone
-```
-
-## BR-RTR (Eltex)
-
-```
-configure
-clock timezone gmt +5
-end
-commit
-confirm
-```
-
-Проверяем:
-
-```
-show date
 ```

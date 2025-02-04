@@ -1,23 +1,26 @@
 # Настраиваем IP адреса
 
 ## ISP
-
+###смотрим название интерфейсов "ens..."
 ```
-configure
-
-int gi1/0/3
-ip address 172.16.4.1/28
-ip firewall disable
-no shutdown
-
-int gi1/0/2
-ip address 172.16.5.1/28
-ip firewall disable
-no shutdown
-
-commit
-confirm
+ip -c a
 ```
+###запоминаем название интерфейса и переходим к его директории
+```
+vim /etc/net/ifaces/ens.../ipv4address
+vim /etc/net/ifaces/ens.../options
+vim /etc/net/ifaces/ens.../ipv4route
+```
+###в случае ipv4address и ipv4route все просто, вписать соответствующие ip-адреса
+###в options необходимо написать следующее
+```
+TYPE=eth
+DISABLED=no
+BOOTPROTO=static
+CONFIG_IPV4=yes
+:wq!
+```
+###для интерфейса, по которому ISP получает интернет, в значении BOOTPROTO, вписать вместо static -> dhcp
 
 <img src="01.png" width='600'>
 

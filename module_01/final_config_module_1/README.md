@@ -469,3 +469,6 @@ echo "
 
 systemctl restart sshd
 ```
+
+
+<img src="easteregg.jpeg" width='300'>
